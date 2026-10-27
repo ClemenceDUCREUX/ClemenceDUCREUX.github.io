@@ -120,9 +120,12 @@ body {
 .hero {
   background-image: url(../img/banniere.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  
+  /* L'image remplit toujours exactement le hero : la vague reste collée en bas
+     et n'est jamais rognée, quel que soit le format d'écran.
+     (Le dégradé supporte l'étirement sans perte visible.) */
+  background-size: 100% 100%;
+  background-position: center bottom;
+
   position: relative;
   display: flex;
   align-items: center;
@@ -383,7 +386,8 @@ body {
     flex-direction: column;
     text-align: center;
     gap: var(--space-s);
-    padding: var(--space-m) var(--space-s) 3rem;
+    /* Plus d'espace en bas pour que le texte ne passe pas sous la vague */
+    padding: var(--space-m) var(--space-s) 6rem;
   }
 
   .hero__photo {
