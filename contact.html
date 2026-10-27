@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio de Clémence Ducreux, étudiante en Master Cultures et Métiers du Web à Paris." />
+    <meta name="author" content="Clémence Ducreux" />
+    <title>Contact | Portfolio de Clémence Ducreux</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <a class="site-header__logo" href="index.html">Mon portfolio</a>
+        <nav aria-label="Navigation principale">
+          <ul class="nav">
+            <li><a class="nav__link" href="index.html" >Accueil</a></li>
+            <li><a class="nav__link" href="realisations.html" >Réalisations</a></li>
+            <li><a class="nav__link" href="contact.html"aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <img class="hero__photo" src="img/photo-profil.webp" alt="Photo" width="150" height="150" />
+          <div class="hero__text">
+            <h1 id="hero-title" class="hero__name">Clémence Ducreux</h1>
+            <p class="hero__job">UX/UI Developper</p>
+          </div>
+        </section>
+
+        <div class="content">
+          <section class="column" aria-labelledby="about-title">
+            <h2 id="about-title" class="section-title">À propos de moi</h2>
+            <p>
+              Étudiante en Master Cultures et Métiers du Web à Paris, je conçois des sites
+              clairs et agréables à utiliser. Phrase de présentation à personnaliser.
+            </p>
+            <ul class="bullet-list">
+              <li>Point faible, trop fort</li>
+              <li>Point fort n°2 à compléter</li>
+              <li>Point fort n°3 à compléter</li>
+            </ul>
+
+            <h3 class="subsection-title">Compétences</h3>
+            <ul class="skills">
+              <li class="skill">
+                <span class="skill__name" id="skill-html">HTML</span>
+                <progress class="skill__bar" value="99" max="100" aria-labelledby="skill-html">99 %</progress>
+                <span class="skill__value">99 %</span>
+              </li>
+              <li class="skill">
+                <span class="skill__name" id="skill-css">CSS</span>
+                <progress class="skill__bar" value="80" max="100" aria-labelledby="skill-css">80 %</progress>
+                <span class="skill__value">80 %</span>
+              </li>
+              <li class="skill">
+                <span class="skill__name" id="skill-figma">Figma</span>
+                <progress class="skill__bar" value="75" max="100" aria-labelledby="skill-figma">75 %</progress>
+                <span class="skill__value">75 %</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="column column--right" aria-labelledby="path-title">
+            <h2 id="path-title" class="section-title">Mon parcours</h2>
+
+            <h3 class="subsection-title">Diplômes</h3>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <p class="timeline__title">Master Cultures et Métiers du Web / 2026-2028</p>
+                <p>Université Gustave eiffel, Paris</p>
+                <p class="timeline__desc">Description de la formation</p>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__title">BUT informatique</p>
+                <p>UPEC site de Fontainebleau</p>
+                <p class="timeline__desc">Description de la formation</p>
+              </li>
+            </ul>
+
+            <h3 class="subsection-title">Expériences</h3>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <p class="timeline__title">Stage / 4 mois</p>
+                <p>Klark</p>
+                <p class="timeline__desc">UX/UI Developper/Designer</p>
+              </li>
+              <li class="timeline__item">
+                <p class="timeline__title">Stage / 2 mois</p>
+                <p>Esekai Agency</p>
+                <p class="timeline__desc">Intégrateur web</p>
+              </li>
+            </ul>
+
+            <h3 class="subsection-title">Centres d'intérêt</h3>
+            <ul class="tags">
+              <li class="tag">Développement web</li>
+              <li class="tag">Design UX / UI</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__social">
+          <h2 class="site-footer__title">Retrouvez-moi</h2>
+          <ul class="social">
+            <li>
+              <a class="social__link" href="https://www.linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer">
+                <img src="img/icon-linkedin.svg" alt="" width="20" height="20" />
+                <span>/ Clémence Ducreux<span class="visually-hidden"> sur LinkedIn (nouvel onglet)</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="social__link" href="https://www.instagram.com/votre-compte" target="_blank" rel="noopener noreferrer">
+                <img src="img/icon-instagram.svg" alt="" width="20" height="20" />
+                <span>@votre-compte<span class="visually-hidden"> sur Instagram (nouvel onglet)</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-footer__cta">
+          <a class="button" href="docs/cv-clemence-ducreux.pdf" download>Télécharger mon CV</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
